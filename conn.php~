@@ -1,0 +1,14 @@
+<?php
+	include_once 'secrets.php';
+
+	try {
+		$dbh = new PDO('mysql:host=courses;dbname=JavaCust65', $dbuser, $dbpass);
+
+
+	} catch (PDOException $e) {
+			print "Error!: " . $e->getMessage() . "<br/>";
+			die();
+	}
+
+
+?>
