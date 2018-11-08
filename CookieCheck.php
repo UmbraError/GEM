@@ -10,7 +10,7 @@
 
 $cookie_name = "User";
 if(!isset($_COOKIE[$cookie_name])) {
-	header('Location: http://students.cs.niu.edu/~z1835773/CSCI467/GEM/Login.php');
+	header('Location: Login.php');
 	exit;
 }
 
