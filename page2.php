@@ -21,7 +21,7 @@
 <select name="BoatNames">
 
 <?php
-include 'passwords.php';
+include 'serects.php';
 try{ 
 	$dsn = "mysql:host=courses;dbname=z1835773";
 	$pdo = new PDO($dsn, $username, $password);
