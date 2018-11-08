@@ -7,38 +7,42 @@ include_once('header.php');
 
 <h2 align = "center"> User Login </h2>
 
-<form action = "action_page.php" 
-      style  = "border:3px solid #f1f1f1;
+<form style  = "border:3px solid #f1f1f1;
 		font-family: Arial, Helvetica, sans-serif;
-		width: 60%;
-		margin-right: 20%;
-		margin-left: 20%
-		">
+		width: 50%;
+		margin-right: 25%;
+		margin-left: 25%"
+      align = "center">
 
 	<div class="container">
 		</br>
 		<label for="uname">
-			<b>Username</b>
+			<b>Username: </b>
 		</label>
-		</br>
 		<input type="text" 
-		       placeholder="Enter Username" 
+		       placeholder="" 
 		       name="uname" required>
 		</br>
 		</br>
 		<label for="psw">
-			<b>Password</b>
+			<b>Password: </b>
 		</label>
-		</br>
 		<input type="password" 
-		       placeholder="Enter Password" 
+		       placeholder="" 
 		       name="psw" required>
 		</br>
 		</br>
 		<button type="submit"
-			style="width:90%;
-			      float:center">
-			<b>Login</b>
+		        onclick="login(uname,psw)"
+			style="width:245px;
+			       background-color: #4CAF50;
+			       padding:5px;
+			       border: none">
+			<b> 
+				<font color = "white">
+					Login 
+				</font>
+			</b>
 		</button>
 		</br>
 		</br>
@@ -50,6 +54,21 @@ include_once('header.php');
 		</span>
 	</div>
 </form>
+
+<font color = "red">
+<p id="error" align = "center"> </p>
+</font>
+
+<script>
+function login(name,pass) {
+	document.getElementById("error").innerHTML =
+	       	"* Invaild Username or Password";
+	//if else check on server for if they are valid
+	//set cookie to track in failed password trys
+	//set cookie that they are logged in
+	
+}
+</script>
 
 <?php
 include_once('footer.php');

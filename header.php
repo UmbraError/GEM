@@ -35,10 +35,11 @@
 
 				<li><a href="index.html">Home</a></li> 
 				<li>&#8226;</li>
-				<li><a href="About.html">TestUser001</a></li>
+				<li><a href="About.html">Mr. Marshall</a></li>
 				<li>&#8226;</li>
-				<li><a href="Projects.html">Settings</a></li>
-				<li>&#8226;</li>
+<!-- Click event to store logout event and clear cookie
+     Note that if a user closes the brower it will not
+     catch the missed logout event -->
 				<li><a href="Portfolio.html">Logout</a></li>
 			</ul>
 		</nav>
